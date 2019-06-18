@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
-title = "Accomplish&shy;ments"
+title = "Certificates"
 subtitle = ""
 
 # Date format
@@ -18,33 +18,43 @@ date_format = "Jan 2006"
 #   Leave other parameters empty if not required.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[item]]
-  organization = "Coursera"
-  organization_url = "https://www.coursera.org"
-  title = "Neural Networks and Deep Learning"
+  organization = "Amazon Web Services"
+  organization_url = "https://aws.amazon.com/"
+  title = "AWS SysOps Administrator Associate"
   url = ""
-  certificate_url = "https://www.coursera.org"
-  date_start = "2018-10-01"
-  date_end = ""
-  description = ""
+  certificate_url = "https://www.certmetrics.com/amazon/public/badge.aspx?i=3&t=c&d=2017-07-07&ci=AWS00268060&dm=80&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BemY5xxsPQvWcHlqwLfR2IQ%3D%3D"
+  date_start = "2017-07-07"
+  date_end = "2020-07-08"
+  description = "Validates technical expertise in deployment, management, and operations on the AWS platform."
 
-[[item]]
-  organization = "edX"
-  organization_url = "https://www.edx.org"
-  title = "Blockchain Fundamentals"
-  url = "https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals"
-  certificate_url = "https://www.edx.org"
-  date_start = "2018-03-01"
-  date_end = ""
-  description = "Formulated informed blockchain models, hypotheses, and use cases."
+#[[item]]
+#  organization = "Coursera"
+#  organization_url = "https://www.coursera.org"
+#  title = "Neural Networks and Deep Learning"
+#  url = ""
+#  certificate_url = "https://www.coursera.org"
+#  date_start = "2018-10-01"
+#  date_end = ""
+#  description = ""
+
+#[[item]]
+#  organization = "edX"
+#  organization_url = "https://www.edx.org"
+#  title = "Blockchain Fundamentals"
+#  url = "https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals"
+#  certificate_url = "https://www.edx.org"
+#  date_start = "2018-03-01"
+#  date_end = ""
+#  description = "Formulated informed blockchain models, hypotheses, and use cases."
   
-[[item]]
-  organization = "DataCamp"
-  organization_url = "https://www.datacamp.com"
-  title = "Object-Oriented Programming in R: S3 and R6 Course"
-  url = ""
-  certificate_url = "https://www.datacamp.com"
-  date_start = "2017-07-01"
-  date_end = "2017-12-21"
-  description = ""
+#[[item]]
+#  organization = "DataCamp"
+#  organization_url = "https://www.datacamp.com"
+#  title = "Object-Oriented Programming in R: S3 and R6 Course"
+#  url = ""
+#  certificate_url = "https://www.datacamp.com"
+#  date_start = "2017-07-01"
+#  date_end = "2017-12-21"
+#  description = ""
 
 +++

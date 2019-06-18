@@ -11,12 +11,12 @@ superuser: true
 
 # Role/position
 # role: Senior JavaScript Developer
-role: Full-stack JavaScript, Certified AWS SysOps, problem-solving enthusiast.
+role: Senior JavaScript Developer
 
 # Organizations/Affiliations
-# organizations:
-# - name: Accenture Bulgaria
-#   url: "https://www.accenture.com/"
+organizations:
+- name: Accenture Bulgaria
+  url: "https://www.accenture.com/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: Full-stack JavaScript, Certified AWS SysOps, problem-solving enthusiast.
