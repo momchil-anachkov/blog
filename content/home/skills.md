@@ -18,48 +18,41 @@ subtitle = ""
   icon = "code"
   icon_pack = "fas"
   name = "Web Development"
-  
-[[feature]]
-  icon = "angular"
-  icon_pack = "fab"
-  name = "Angular"
-#  description = ""  
-  
-[[feature]]
-  icon = "vuejs"
-  icon_pack = "fab"
-  name = "Vue"
-#  description = ""  
-  
-[[feature]]
-  icon = "react"
-  icon_pack = "fab"
-  name = "React"
-#  description = ""  
-  
-[[feature]]
-  icon = "node"
-  icon_pack = "fab"
-  name = "NodeJS"
-#  description = ""  
-
-[[feature]]
-  icon = "electron"
-  icon_pack = "fas"
-  name = "Electron"
-#  description = "90%"
 
 [[feature]]
   icon = "graphql"
   icon_pack = "fas"
   name = "GraphQL"
-#  description = "90%"
+  
+[[feature]]
+  icon = "angular"
+  icon_pack = "fab"
+  name = "Angular"
+  
+[[feature]]
+  icon = "vuejs"
+  icon_pack = "fab"
+  name = "Vue"
+  
+[[feature]]
+  icon = "react"
+  icon_pack = "fab"
+  name = "React"
+  
+[[feature]]
+  icon = "node"
+  icon_pack = "fab"
+  name = "NodeJS"
+
+[[feature]]
+  icon = "electron"
+  icon_pack = "fas"
+  name = "Electron"
 
 [[feature]]
   icon = "pencil-ruler"
   icon_pack = "fas"
   name = "UX Design"
-#  description = "90%"
 
   
 #  description = "100%"  
