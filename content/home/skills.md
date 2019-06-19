@@ -44,6 +44,18 @@ subtitle = ""
 #  description = ""  
 
 [[feature]]
+  icon = "electron"
+  icon_pack = "fas"
+  name = "Electron"
+#  description = "90%"
+
+[[feature]]
+  icon = "graphql"
+  icon_pack = "fas"
+  name = "GraphQL"
+#  description = "90%"
+
+[[feature]]
   icon = "pencil-ruler"
   icon_pack = "fas"
   name = "UX Design"
