@@ -25,7 +25,7 @@ date_format = "Jan 2006"
   certificate_url = "https://www.certmetrics.com/amazon/public/badge.aspx?i=3&t=c&d=2017-07-07&ci=AWS00268060&dm=80&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BemY5xxsPQvWcHlqwLfR2IQ%3D%3D"
   date_start = "2017-07-07"
   date_end = "2020-07-08"
-  description = "Validates technical expertise in deployment, management, and operations on the AWS platform."
+  description = "Validates technical expertise in deployment, management, and operations on Amazon's AWS platform."
 
 #[[item]]
 #  organization = "Coursera"

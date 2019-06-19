@@ -15,7 +15,7 @@ role: Senior JavaScript Developer
 
 # Organizations/Affiliations
 organizations:
-- name: Accenture Bulgaria
+- name: Accenture
   url: "https://www.accenture.com/"
 
 # Short bio (displayed in user profile at end of posts)
