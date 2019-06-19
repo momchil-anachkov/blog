@@ -3,7 +3,7 @@ title: Display Jupyter Notebooks with Academic
 subtitle: Learn how to blog in Academic using Jupyter notebooks
 summary: Learn how to blog in Academic using Jupyter notebooks
 authors:
-- admin
+- momchil-anachkov
 tags: []
 categories: []
 date: "2019-02-05T00:00:00Z"

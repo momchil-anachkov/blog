@@ -4,7 +4,7 @@ name: Momchil Anachkov
 
 # Username (this should match the folder name)
 authors:
-- admin
+- momchil-anachkov
 
 # Is this the primary user of the site?
 superuser: true
