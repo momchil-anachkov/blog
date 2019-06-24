@@ -80,6 +80,8 @@ email: ""
 # - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Software engineering is my passion. I like spending time researching different software archintectures, their strengths, weaknesses, and overall tradeoffs. I've spent most of my teenage and adult life doing web development in one environment or another, be that high-school, college, commercial work, or passion/learning projects.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+I specialize mainly in JavaScript web development, SQL, and Document databases.
+
+Creating quality software is difficult, and I'm happy to share with you my thoughts on the process, as well as some things I've had a hand in.

@@ -30,6 +30,10 @@ subtitle = ""
     tag = "Deep Learning"
   
   [[content.filter_button]]
+    name = "Front-End Development"
+    tag = "Front-End Development"
+  
+  [[content.filter_button]]
     name = "Other"
     tag = "Demo"
 
