@@ -58,11 +58,11 @@ Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoq
 <!-- <img src="https://via.placeholder.com/150"> -->
 <div class="image-gallery">
 <div class="image-gallery__content">
-  <img class="image-gallery__image" src="phone-1.webp">
-  <img class="image-gallery__image" src="phone-2.webp">
-  <img class="image-gallery__image" src="phone-3.webp">
-  <img class="image-gallery__image" src="phone-4.webp">
-  <img class="image-gallery__image" src="phone-5.webp">
+  <img class="image-gallery__image" src="phone-1.jpg">
+  <img class="image-gallery__image" src="phone-2.jpg">
+  <img class="image-gallery__image" src="phone-3.jpg">
+  <img class="image-gallery__image" src="phone-4.jpg">
+  <img class="image-gallery__image" src="phone-5.jpg">
 </div>
 </div>
 
