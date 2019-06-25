@@ -72,13 +72,15 @@ Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoq
   }
 
   .image-gallery__content {
-    /* display: flex; */
     overflow-x: scroll;
     white-space: nowrap;
+    scrollbar-width: thin;
   }
 
   .image-gallery__image:not(:last-of-type) {
     margin-right: 0.5rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 
   .image-gallery__image {
