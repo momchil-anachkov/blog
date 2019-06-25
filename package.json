@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "0.0.0",
+  "description": "My personal blog/portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "hugo server -D"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/momchil-anachkov/blog.git"
+  },
+  "keywords": [
+    "hugo",
+    "blog",
+    "portfolio"
+  ],
+  "author": "Momchil Anachkov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/momchil-anachkov/blog/issues"
+  }
+}
