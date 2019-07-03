@@ -58,42 +58,128 @@ As with any software product, shipping is just half the battle. Once you get tha
 
 Taking over a software project from another team is always a challenge as you need to step into the thoughts of the developers, when they were writing the code-base. This is also especially true when we're talking about a large-scale project, such as a trading platform. Luckily after a couple of introductory weeks we were confident enough to start making refactoring changes, without too much worry about regressions, as well as start providing adequate support for the platform.
 
+## Developing an iOS and Android app
 
+In this day and age everyone's time is quite valuable. People have so many things to keep track and take care of throughout the day. Many users want the ability to accomplish tasks on the go. This is partially the reason many website development strategies embrace the mobile-first approach. Because the stats show that most website traffic comes from mobile devices: tablets, phones and the like. This is exactly why our clients accurately deduced that they require a moblie version of their site/platform. And for a platform that expect frequent use from single users, a dedicated iOS & Android app makes perfect sense.
 
-<!-- <img src="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/ac/51/fb/ac51fbd5-39a5-4c07-45e0-167fdd644ed3/pr_source.png/300x0w.jpg" style="border-radius: 25px; object-fit: none; width:300px; height:800px;"> -->
-<!-- <img src="https://via.placeholder.com/150"> -->
-<div class="image-gallery">
-<div class="image-gallery__content">
-  <img class="image-gallery__image" src="phone-1.jpg">
-  <img class="image-gallery__image" src="phone-2.jpg">
-  <img class="image-gallery__image" src="phone-3.jpg">
-  <img class="image-gallery__image" src="phone-4.jpg">
-  <img class="image-gallery__image" src="phone-5.jpg">
+So we took some time to research potential options. A few of these included:
+
+  * Developing a native App for each platform. One in Swift (for iOS), one in Java (for Android)
+  * Turning the mobile version of the platform into a PWA
+  * Developing a semi-hybrid app
+  * Developing a hybrid app
+
+### Developing a native App for each platform. One in Swift (for iOS), one in Java (for Android)
+
+Obviously the baseline approach was to write two applications. One for iDevice and one for Android users. This had a few hefty implications.
+
+  1. Twice the codebase. Every feature set would have to be implemented twice, tested twice, and maintained twice. While for a larger company this could be a potential option, this large workload was something that would hevily affect the tangible progress and the speed at which we could deliver.
+  2. Platform-specific team capability. While we were well-versed in web development including many of it's flavors, mobile app development was hardly our forte. We would have to dedicate additional time for knowledge aqcuisition, and learn on the go, and while this is technically possible it would definitely affect deadlines and time-to-resolution in case of issues arising.
+
+All in all, this route had some major drawbacks and not a lot of benefit, so we decided to keep looking for alternatives.
+
+### Turning the mobile version of the platform into a Progressive Web App
+
+Next we considered going the Progressive Web App route. At the time of analysis PWAs were still a novel concept and quite immature. API support for things like geolocation, and the like was still not stable. Add the fact that Apple and Google were not on the same page, regarding feature set, and one could see why we dismissed what lay down that road.
+
+### Developing a hybrid app.
+
+In comes the saving grace. While at the time, there were, and still are some issues with things like Cordova, Ionic and the like, it was the best fit for our case. The mobile version of the trading platform was already written and mostly stable. This meant that we could for the most part just _wrap_ the existing platform and go from there. There were many benefits to this.
+
+1. This required minimal effort. Relative to the native approach, the time that would be required to do this was miniscule. That meant that once we managed to package the web platform in a Cordova application we would have a stable base to move forward from.
+2. We inherit all of the app design. Already existing users wouldn't have to learn a different UI to do the things they already knew how to do in their mobile workflow.
+3. Less code to maintain. Since Cordova apps are in essence web pages, presented in a native web view. We could reuse the codebase throughout all the platforms. That means that there wouldn't have to be seperate people maintaining the app for an Android and iOS device, and even more than that.
+4. Changes to the code would be reflected across all platforms. Since we're using the same code base, once we develop a new feature, or fix an existing issue, that change could be pushed everywhere. Users of one platform wouldn't have to wait for updates, already available on another one. This was quite important as we already knew there was a [**design overhaul**](#redesigning-the-mobile-app-and-website) looming in the near future.
+
+We were extremely happy to have found a development strategy and stack that was so promising for our use-case. 🥳
+
+## Redesigning the mobile app and website
+
+While the platform was fully functional, some time had passed, since release and as such the design had become a little outdated. And so they came to us with a request 
+
+> We've created a new design and we would like you guys to implement it.
+
+Fantastic!
+
+For about the next month we worked closely with our client's designer to iron out the details. As with any initial design, there were a few edge cases to iron out due to the dynamic nature of the app. I'm very happy to say that the redesign was quite successful and went very smoothly, and I'm also happy to share the end result of some of that work with you. Take a look below.
+
+<div class="phone-gallery">
+  <div class="phone-gallery__content">
+    {{< figure src="phone-1.jpg" lightbox="true" alt="Profile details of a single trader" >}}
+    {{< figure src="phone-2.jpg" lightbox="true" alt="Profile details of a single trader" >}}
+    {{< figure src="phone-3.jpg" lightbox="true" alt="Profile details of a single trader" >}}
+    {{< figure src="phone-4.jpg" lightbox="true" alt="Profile details of a single trader" >}}
+    {{< figure src="phone-5.jpg" lightbox="true" alt="Profile details of a single trader" >}}
+  </div>
 </div>
+
+And due to [our choice to go with a _hybrid app_ approach](#developing-a-hybrid-app) we could easily update all the platforms we were targeting: Android, iOS and Mobile.
+
+## Adding Theming functionality.
+
+Staring at a screen all day inevitably puts strain on your eyes. And while a white, bright theme may be ok on your phone if you want to check or do something on the go, it is definitely lacking, when it comes to working, surrounded by multiple displays throughout the day. And so the guys came to us with another request.
+
+> We'd like our users to be able to customize the appearance of the platform to their needs.
+
+Now obviously brand-specific colors would have to remain the same, but there was no reason a sort of _night mode_ couldn't be implemented. So off we go! 🔥
+
+... or so we thought.
+
+Sadly the UI of the platform was not developed with theming in mind. I'm sure anyone who's worked on custom themes, be they just different static color schemes, or allowing the user to customize each facet of the application, knows how importent your markup & CSS structure is. And as you can imagine it took us a while to rework the UI, to become _themable_, moving forward carefully to not cause any UI regressions.
+
+Even though it took some time, in the end all went well. We managed to rework the codebase to align it with the desired functionality, and plugged in the _night mode_ color values and voila. A pleasant dark theme, that's easy on the eyes.
+
+{{< figure src="mode-light.png" title="Light mode" lightbox="true" alt="Light mode theme" >}}
+{{< figure src="mode-dark.png" title="Dark mode" lightbox="true" alt="Light mode theme" >}}
+
+## Adding Copytrading Functionality
+
+An exciting time came along at one point, when our client came to us with their first functional feature request: **Copytrading**.
+
+Sounds fancy. So what is that?
+
+Essentially the Idea is that certain investors can make their profiles public, allowing you to see their trading data i.e. what positions they have currently open, when they opened them, etc. You could then _follow_ these traders, and what would happen is that you would start mirroring the positions they open and close from here on. The idea being, that if you have someone that consistently demonstrates profit over a longer period of time, you could follow them and trust that they know what they're doing, as they probably wouldn't want to make bad investments themselves, and therefore net an easier, lower-risk profit.
+
+It while, and after a couple of months of working together with the off-site backend team, to coordinate the API we managed to deliver what I would call a very successful implementation.
+
+<div class="copytrading-gallery">
+  {{< figure src="copytrading-profile.png" lightbox="true" title="Profile details of a single trader" alt="Profile details of a single trader" >}}
+  {{< figure src="copytrading-sidebar.png" lightbox="true" title="List of traders" alt="Profile details of a single trader" >}}
 </div>
 
 <style>
-  .image-gallery {
+  .phone-gallery {
     box-sizing: border-box;
   }
 
-  .image-gallery__content {
+  .phone-gallery__content {
     overflow-x: scroll;
     white-space: nowrap;
     scrollbar-width: thin;
   }
 
-  .image-gallery__image:not(:last-of-type) {
+  .phone-gallery figure:not(:last-of-type) {
     margin-right: 0.5rem;
     margin-top: 16px;
     margin-bottom: 16px;
   }
 
-  .image-gallery__image {
+  .phone-gallery figure {
     display: inline-block;
-    height: 420px;
     border: 10px solid #010101;
     border-radius: 10px;
     margin-bottom: 1rem;
+  }
+
+  .phone-gallery figure img {
+    height: 420px;
+  }
+
+  .copytrading-gallery {
+    display: flex;
+  }
+
+  .copytrading-gallery figure {
+    margin-right: 0.5rem;
   }
 </style>
