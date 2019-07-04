@@ -4,7 +4,8 @@
   "description": "My personal blog/portfolio",
   "main": "index.js",
   "scripts": {
-    "start": "hugo server -D"
+    "start": "hugo server -D",
+    "build": "hugo"
   },
   "repository": {
     "type": "git",

@@ -85,3 +85,7 @@ Software engineering is my passion. I like spending time researching different s
 I specialize mainly in JavaScript web development, SQL, and Document databases.
 
 Creating quality software is difficult, and I'm happy to share with you my thoughts on the process, as well as some things I've had a hand in.
+
+Cheers 🥂!
+
+**NB**: _The site is still not fully complete. There's still a lot of things to add (projects, blog posts, etc). If you want to know more, feel free to get in touch._ 
