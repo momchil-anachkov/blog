@@ -3,9 +3,14 @@ title: The story of a forex trading platform.
 summary: Web and Hybrid Mobile App Development and support
 tags:
 - Front-End Development
-- Hybrid App Development
+- Hybrid Apps
+- Cordova
+- Integration
+- Theming
+- UI Development
+- Angular.js
 
-date: "2016-04-27T00:00:00Z"
+date: "2019-07-04T00:00:00Z"
 
 reading_time: false  # Show estimated reading time?
 share: false  # Show social sharing links?
@@ -28,7 +33,7 @@ links:
 # - icon: twitter
 #   icon_pack: fab
 #   name: Follow
-#   url: https://twitter.com/georgecushen
+#   url: https://twitter.com/
 
 url_code: ""
 url_pdf: ""
@@ -45,6 +50,8 @@ toc: true
 slides: ""
 ---
 
+{{% toc %}}
+
 ## Intro
 
 A client came to the company, where I was working at the time, and had a unique request. They had already successfully built a CFD trading website/platform and were looking for a few things we could provide. It was a great opportunity, both for the company, as well as our team, to grow and evolve.
@@ -55,7 +62,7 @@ So here's what they needed from us, the story of how each of these things came t
 
 The guys had already released the platform, but as with any software product, shipping is just half the battle. Once you get that large flow of users, you need a dedicated team to iron out issues, impossible to catch on a smaller testing scale. Our team was tasked with handling defect resolution, and in the meantime aligning the code-base with established best practices.
 
-Taking over a software project from another team is always a challenge as you need to step into the thoughts of the developers, when they were writing the code-base. This is also especially true when we're talking about a large-scale project, such as a trading platform. Luckily after a couple of introductory weeks filled with onboarding regarding functional requirements, and another couple for getting acquainted with the project architecture, we were confident enough to start making refactoring, and stabilization changes, without too much worry about regressions. We were off to a great start.
+Taking over a software project from another team is always a challenge as you need to step into the thoughts of the developers, when they were writing the code-base. This is also especially true when we're talking about a large-scale project, such as a trading platform. Luckily we had solid experience with the technology stack used: Node.js, NPM, Grunt along with Angular.js. So after a couple of introductory weeks filled with onboarding regarding functional requirements, and another couple for getting acquainted with the project architecture, we were confident enough to start making refactoring, and stabilization changes, without too much worry about regressions. We were off to a great start.
 
 ## Developing an iOS and Android app
 
@@ -78,7 +85,7 @@ Next we considered going the Progressive Web App route. However at the time of a
 
 So we keep looking...
 
-#### Developing a hybrid app.
+#### Developing a hybrid app
 
 And in comes the saving grace. While at the time, there were, and still are some issues with things like Cordova, Ionic and the like, it was the best fit for our case. The mobile version of the trading platform was already written and stable (👏). This meant that we could for the most part just _wrap_ the existing platform and go from there. There were many benefits to this.
 
@@ -113,7 +120,7 @@ For about the next month we worked closely with our client's designer to work ou
 
 And due to [our choice to go with a _hybrid app_ approach](#developing-a-hybrid-app) we could easily update all the platforms we were targeting: Android, iOS and Mobile.
 
-## Adding Theming functionality.
+## Adding Themes Functionality
 
 Staring at a screen all day inevitably puts strain on your eyes. And while a white, bright theme may be ok on your phone if you want to check or do something on the go, it is definitely lacking, when it comes to working, surrounded by multiple displays throughout the day. And so the guys came to us with another request.
 
@@ -149,7 +156,7 @@ We started development on it and after a couple of months of working together wi
 
 ## In the end...
 
-It was an interesting journey. It had it's ups and downs, but there was definitely a lot to learn from it, and learn we did. I beleive our team did a great job throughout: Analyzing the issues, picking the right tools and development approaches for the job, delivering competent solutions, aligned with the clients needs, and ultimately fostering a healthy client-provider relationship.
+It was an interesting journey. It had it's ups and downs, but there was definitely a lot to learn from it, and learn we did. I beleive our team did a great job throughout: Analyzing the issues, picking the right tools and development approaches for the job, delivering competent solutions, aligned with the client's needs, and ultimately fostering a healthy client-provider relationship.
 
 <style>
   .phone-gallery {
