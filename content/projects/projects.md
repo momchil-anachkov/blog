@@ -26,6 +26,10 @@ subtitle = ""
     tag = "*"
   
   [[content.filter_button]]
+    name = "Desktop Application Development"
+    tag = "Desktop Application Development"
+
+  [[content.filter_button]]
     name = "Front-End Development"
     tag = "Front-End Development"
 

@@ -1,6 +1,6 @@
 ---
 title: The story of a forex trading platform.
-summary: Web and Hybrid Mobile App Development and support
+summary: Web and Hybrid Mobile App Development and support.
 authors: [ "Momchil Anachkov" ]
 draft: false
 categories: []

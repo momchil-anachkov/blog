@@ -29,6 +29,10 @@ subtitle = ""
     name = "Front-End Development"
     tag = "Front-End Development"
 
+  [[content.filter_button]]
+    name = "Desktop Application Development"
+    tag = "Desktop Application Development"
+
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
   columns = "2"
