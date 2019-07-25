@@ -4,7 +4,7 @@
 title: "Employee Assignment Optimization"
 summary: "How our team played a role in making things nicer for thousands of people."
 authors: ["Momchil Anachkov"]
-draft: true
+draft: false
 tags: [
   "Desktop Application Development",
   "UI Development",
@@ -27,7 +27,7 @@ image:
 
 header:
   caption: ""
-  image: "project/electron-app/header.jpg"
+  image: "project/employee-assignment-optimization/header.jpg"
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
