@@ -101,7 +101,7 @@ We were now ready to start working on feature requests!
 
 While the platform was fully functional, along with the newly packaged mobile app, some time had passed, since release. As such, the design had become a little outdated. And so they came to us with a request:
 
-> We a new design in the works and we would like you guys to work with us on it's implementation.
+> We have a new design in the works and we would like you guys to work with us on it's implementation.
 
 Fantastic!
 
@@ -109,11 +109,11 @@ For about the next month we worked closely with our client's designer to work ou
 
 <div class="phone-gallery">
   <div class="phone-gallery__content">
-    {{< figure src="phone-1.jpg" lightbox="true" alt="Profile details of a single trader" >}}
-    {{< figure src="phone-2.jpg" lightbox="true" alt="Profile details of a single trader" >}}
-    {{< figure src="phone-3.jpg" lightbox="true" alt="Profile details of a single trader" >}}
-    {{< figure src="phone-4.jpg" lightbox="true" alt="Profile details of a single trader" >}}
-    {{< figure src="phone-5.jpg" lightbox="true" alt="Profile details of a single trader" >}}
+    {{< figure src="phone-1.jpg" lightbox="true" alt="A list of a user's favorited quotes" >}}
+    {{< figure src="phone-2.jpg" lightbox="true" alt="A detailed, charted view of a commodity" >}}
+    {{< figure src="phone-3.jpg" lightbox="true" alt="A list of a user's open orders" >}}
+    {{< figure src="phone-4.jpg" lightbox="true" alt="A history of all the user's orders" >}}
+    {{< figure src="phone-5.jpg" lightbox="true" alt="A list of a user's previous orders, along with profits/losses" >}}
   </div>
 </div>
 
