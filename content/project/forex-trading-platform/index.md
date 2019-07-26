@@ -134,6 +134,7 @@ Sadly the UI of the platform was not developed with theming in mind. I'm sure an
 Even though it took some time, in the end all went well. We managed to rework the codebase to align it with the desired functionality, and plugged in the _night mode_ color values and voila. A pleasant dark theme, that's easy on the eyes.
 
 {{< figure src="mode-light.png" title="Light mode" lightbox="true" alt="Light mode theme" >}}
+
 {{< figure src="mode-dark.png" title="Dark mode" lightbox="true" alt="Light mode theme" >}}
 
 Even we, as a team were happy, since looking at the platform for a sizeable portion of the day, was much more pleasant.
@@ -160,6 +161,8 @@ It was an interesting journey. It had it's ups and downs, but there was definite
 <style>
   .phone-gallery {
     box-sizing: border-box;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .phone-gallery__content {
@@ -170,15 +173,16 @@ It was an interesting journey. It had it's ups and downs, but there was definite
 
   .phone-gallery figure:not(:last-of-type) {
     margin-right: 0.5rem;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .phone-gallery figure {
     display: inline-block;
     border: 10px solid #010101;
     border-radius: 10px;
-    margin-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .phone-gallery figure img {
