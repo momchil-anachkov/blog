@@ -1,5 +1,9 @@
 # Ideas for future blog posts
 
+## General Front-End
+
+### developing easy-to-reuse components using angular bindings
+
 ## Custom scrollbars
 
 ## Svelte.js
